@@ -26,6 +26,7 @@ Partial Class Form1
         Me.TxtNama = New System.Windows.Forms.TextBox()
         Me.TxtAlamat = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,11 +61,21 @@ Partial Class Form1
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Alamat"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(24, 141)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(98, 20)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Jenis Kelamin"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TxtAlamat)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TxtNama)
@@ -80,4 +91,5 @@ Partial Class Form1
     Friend WithEvents TxtNama As TextBox
     Friend WithEvents TxtAlamat As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

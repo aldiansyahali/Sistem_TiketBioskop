@@ -100,7 +100,7 @@ Public Class Users
             dbConn.Open()
             sqlCommand.Connection = dbConn
 
-            Dim queryAuth = "SELECT id, username FROM users 
+            Dim queryAuth = "SELECT id, email FROM users 
                              WHERE email='" & email_login & "' AND password='" & EncryptMD5(password_login) & "'"
 
             sqlCommand.CommandText = queryAuth

@@ -14,7 +14,7 @@
         Dim data_user As List(Of String) = Users.CheckAuthDatabase(plainEmail, plainPassword)
 
         If data_user.Count > 0 Then
-            Users.emailProperty = data_user(1)
+            Users.emailProperty = data_user(2)
             Home.Show()
             Me.Hide()
         End If

@@ -63,7 +63,6 @@ Public Class Users
 
     Public Function AddUsersDatabase(nama_regist As String, email_regist As String, password_regist As String)
         Try
-            Dim today = Date.Now()
 
             dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username_db + ";" _
             + "password=" + password_db + ";" + "database=" + database
@@ -71,11 +70,10 @@ Public Class Users
             dbConn.Open()
 
             sqlCommand.Connection = dbConn
-            sqlQuery = "INSERT INTO USERS( nama, email, password, registered_at) VALUE('" _
+            sqlQuery = "INSERT INTO USERS( nama, email, password) VALUE('" _
                         & nama_regist & "', '" _
                         & email_regist & "', '" _
-                        & EncryptMD5(password_regist) & "', '" _
-                        & today.ToString("yyyy/MM/dd") & "')"
+                        & EncryptMD5(password_regist) & "')"
 
             Debug.WriteLine(sqlQuery)
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)

@@ -115,7 +115,7 @@ Partial Class SignIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.SystemColors.HighlightText
         Me.ClientSize = New System.Drawing.Size(517, 413)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.BtnSignUp)

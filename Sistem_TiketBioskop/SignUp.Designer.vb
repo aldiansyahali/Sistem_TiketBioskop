@@ -26,9 +26,9 @@ Partial Class SignUp
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TxtNama = New System.Windows.Forms.TextBox()
+        Me.TxtEmail = New System.Windows.Forms.TextBox()
+        Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -69,26 +69,26 @@ Partial Class SignUp
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Password"
         '
-        'TextBox1
+        'TxtNama
         '
-        Me.TextBox1.Location = New System.Drawing.Point(156, 91)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(228, 27)
-        Me.TextBox1.TabIndex = 4
+        Me.TxtNama.Location = New System.Drawing.Point(156, 91)
+        Me.TxtNama.Name = "TxtNama"
+        Me.TxtNama.Size = New System.Drawing.Size(228, 27)
+        Me.TxtNama.TabIndex = 4
         '
-        'TextBox2
+        'TxtEmail
         '
-        Me.TextBox2.Location = New System.Drawing.Point(156, 133)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(228, 27)
-        Me.TextBox2.TabIndex = 5
+        Me.TxtEmail.Location = New System.Drawing.Point(156, 133)
+        Me.TxtEmail.Name = "TxtEmail"
+        Me.TxtEmail.Size = New System.Drawing.Size(228, 27)
+        Me.TxtEmail.TabIndex = 5
         '
-        'TextBox3
+        'TxtPassword
         '
-        Me.TextBox3.Location = New System.Drawing.Point(156, 179)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(228, 27)
-        Me.TextBox3.TabIndex = 6
+        Me.TxtPassword.Location = New System.Drawing.Point(156, 179)
+        Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.Size = New System.Drawing.Size(228, 27)
+        Me.TxtPassword.TabIndex = 6
         '
         'Button1
         '
@@ -108,12 +108,12 @@ Partial Class SignUp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackColor = System.Drawing.SystemColors.HighlightText
         Me.ClientSize = New System.Drawing.Size(456, 315)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtPassword)
+        Me.Controls.Add(Me.TxtEmail)
+        Me.Controls.Add(Me.TxtNama)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -129,8 +129,8 @@ Partial Class SignUp
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TxtNama As TextBox
+    Friend WithEvents TxtEmail As TextBox
+    Friend WithEvents TxtPassword As TextBox
     Friend WithEvents Button1 As Button
 End Class

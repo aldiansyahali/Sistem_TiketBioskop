@@ -23,80 +23,107 @@ Partial Class SignIn
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtEmail = New System.Windows.Forms.TextBox()
+        Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnSignIn = New System.Windows.Forms.Button()
+        Me.BtnSignUp = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins SemiBold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(190, 36)
+        Me.Label1.Location = New System.Drawing.Point(197, 30)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 40)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Sign In"
         '
-        'TextBox1
+        'TxtEmail
         '
-        Me.TextBox1.Location = New System.Drawing.Point(213, 97)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(166, 27)
-        Me.TextBox1.TabIndex = 1
+        Me.TxtEmail.Location = New System.Drawing.Point(175, 99)
+        Me.TxtEmail.Name = "TxtEmail"
+        Me.TxtEmail.Size = New System.Drawing.Size(262, 27)
+        Me.TxtEmail.TabIndex = 1
         '
-        'TextBox2
+        'TxtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(213, 140)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(166, 27)
-        Me.TextBox2.TabIndex = 2
+        Me.TxtPassword.Location = New System.Drawing.Point(175, 142)
+        Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.Size = New System.Drawing.Size(262, 27)
+        Me.TxtPassword.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(115, 97)
+        Me.Label2.Location = New System.Drawing.Point(82, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 20)
+        Me.Label2.Size = New System.Drawing.Size(46, 20)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Username"
+        Me.Label2.Text = "Email"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(120, 143)
+        Me.Label3.Location = New System.Drawing.Point(82, 145)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 20)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Password"
         '
-        'Button1
+        'BtnSignIn
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button1.Location = New System.Drawing.Point(285, 194)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Sign In"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnSignIn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.BtnSignIn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnSignIn.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnSignIn.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.BtnSignIn.Location = New System.Drawing.Point(343, 196)
+        Me.BtnSignIn.Name = "BtnSignIn"
+        Me.BtnSignIn.Size = New System.Drawing.Size(94, 29)
+        Me.BtnSignIn.TabIndex = 5
+        Me.BtnSignIn.Text = "Sign In"
+        Me.BtnSignIn.UseVisualStyleBackColor = False
+        '
+        'BtnSignUp
+        '
+        Me.BtnSignUp.BackColor = System.Drawing.Color.BlueViolet
+        Me.BtnSignUp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnSignUp.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnSignUp.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.BtnSignUp.Location = New System.Drawing.Point(343, 299)
+        Me.BtnSignUp.Name = "BtnSignUp"
+        Me.BtnSignUp.Size = New System.Drawing.Size(94, 29)
+        Me.BtnSignUp.TabIndex = 6
+        Me.BtnSignUp.Text = "Sign Up"
+        Me.BtnSignUp.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(113, 303)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(224, 20)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Jika Belum memiliki akun silakan"
         '
         'SignIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(484, 284)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(517, 413)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.BtnSignUp)
+        Me.Controls.Add(Me.BtnSignIn)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtPassword)
+        Me.Controls.Add(Me.TxtEmail)
         Me.Controls.Add(Me.Label1)
         Me.Name = "SignIn"
         Me.Text = "Sign In"
@@ -106,9 +133,11 @@ Partial Class SignIn
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtEmail As TextBox
+    Friend WithEvents TxtPassword As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnSignIn As Button
+    Friend WithEvents BtnSignUp As Button
+    Friend WithEvents Label4 As Label
 End Class

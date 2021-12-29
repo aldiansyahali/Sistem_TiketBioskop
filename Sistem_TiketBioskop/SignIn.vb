@@ -15,7 +15,7 @@
 
         If data_user.Count > 0 Then
             Users.emailProperty = data_user(1)
-            Home.Show()
+            Studio.Show()
             Me.Hide()
         End If
     End Sub

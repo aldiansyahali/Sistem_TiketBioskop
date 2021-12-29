@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+JkTFQM4Ow69QRAvokvMpamJ4OIWrrXHvhinJHQVFvqzQ/BRrIsuwoppjcKOA0JxD9MwtCKna2fJHqzgDvIenA==",
+  "dgSpecHash": "advjw62kJH5WR7gvsYxTMwouWrLJK9pEhqrMzN7NHLwd2zzKvO+LOTTo1uVNh89On1shtcheIEbKUUf62kuk/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\aldia\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\aldia\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "C:\\Users\\aldia\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512",
     "C:\\Users\\aldia\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\aldia\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\aldia\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

@@ -29,8 +29,9 @@ Partial Class Studio
         Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Kapasitas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Harga_Kursi = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnTambah = New System.Windows.Forms.Button()
+        Me.BtnHapus = New System.Windows.Forms.Button()
+        Me.BtnEdit = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -90,31 +91,41 @@ Partial Class Studio
         Me.Harga_Kursi.Name = "Harga_Kursi"
         Me.Harga_Kursi.Width = 125
         '
-        'Button1
+        'BtnTambah
         '
-        Me.Button1.Location = New System.Drawing.Point(458, 264)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnTambah.Location = New System.Drawing.Point(458, 264)
+        Me.BtnTambah.Name = "BtnTambah"
+        Me.BtnTambah.Size = New System.Drawing.Size(94, 29)
+        Me.BtnTambah.TabIndex = 2
+        Me.BtnTambah.Text = "Tambah"
+        Me.BtnTambah.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnHapus
         '
-        Me.Button2.Location = New System.Drawing.Point(358, 264)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Hapus"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnHapus.Location = New System.Drawing.Point(258, 264)
+        Me.BtnHapus.Name = "BtnHapus"
+        Me.BtnHapus.Size = New System.Drawing.Size(94, 29)
+        Me.BtnHapus.TabIndex = 3
+        Me.BtnHapus.Text = "Hapus"
+        Me.BtnHapus.UseVisualStyleBackColor = True
+        '
+        'BtnEdit
+        '
+        Me.BtnEdit.Location = New System.Drawing.Point(358, 264)
+        Me.BtnEdit.Name = "BtnEdit"
+        Me.BtnEdit.Size = New System.Drawing.Size(94, 29)
+        Me.BtnEdit.TabIndex = 4
+        Me.BtnEdit.Text = "Edit"
+        Me.BtnEdit.UseVisualStyleBackColor = True
         '
         'Studio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(579, 403)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnEdit)
+        Me.Controls.Add(Me.BtnHapus)
+        Me.Controls.Add(Me.BtnTambah)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -135,6 +146,7 @@ Partial Class Studio
     Friend WithEvents Id As DataGridViewTextBoxColumn
     Friend WithEvents Kapasitas As DataGridViewTextBoxColumn
     Friend WithEvents Harga_Kursi As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnTambah As Button
+    Friend WithEvents BtnHapus As Button
+    Friend WithEvents BtnEdit As Button
 End Class

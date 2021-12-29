@@ -24,8 +24,8 @@ Partial Class TambahStudio
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtKapasitas = New System.Windows.Forms.TextBox()
+        Me.TxtHargaKursi = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -47,19 +47,19 @@ Partial Class TambahStudio
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Harga Kursi"
         '
-        'TextBox1
+        'TxtKapasitas
         '
-        Me.TextBox1.Location = New System.Drawing.Point(151, 57)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(174, 27)
-        Me.TextBox1.TabIndex = 2
+        Me.TxtKapasitas.Location = New System.Drawing.Point(151, 57)
+        Me.TxtKapasitas.Name = "TxtKapasitas"
+        Me.TxtKapasitas.Size = New System.Drawing.Size(174, 27)
+        Me.TxtKapasitas.TabIndex = 2
         '
-        'TextBox2
+        'TxtHargaKursi
         '
-        Me.TextBox2.Location = New System.Drawing.Point(151, 103)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(174, 27)
-        Me.TextBox2.TabIndex = 3
+        Me.TxtHargaKursi.Location = New System.Drawing.Point(151, 103)
+        Me.TxtHargaKursi.Name = "TxtHargaKursi"
+        Me.TxtHargaKursi.Size = New System.Drawing.Size(174, 27)
+        Me.TxtHargaKursi.TabIndex = 3
         '
         'Button1
         '
@@ -76,8 +76,8 @@ Partial Class TambahStudio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(379, 259)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtHargaKursi)
+        Me.Controls.Add(Me.TxtKapasitas)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "TambahStudio"
@@ -89,7 +89,7 @@ Partial Class TambahStudio
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtKapasitas As TextBox
+    Friend WithEvents TxtHargaKursi As TextBox
     Friend WithEvents Button1 As Button
 End Class

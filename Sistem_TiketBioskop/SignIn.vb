@@ -1,10 +1,12 @@
 ﻿Public Class SignIn
+    Public Shared Studio As Studio
     Public Shared Users As Users
 
     Public Sub New()
 
         InitializeComponent()
         Users = New Users
+        Studio = New Studio
     End Sub
 
     Private Sub BtnSignIn_Click(sender As Object, e As EventArgs) Handles BtnSignIn.Click

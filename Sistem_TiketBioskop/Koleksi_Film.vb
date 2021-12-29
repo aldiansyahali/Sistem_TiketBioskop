@@ -201,12 +201,12 @@ Public Class Koleksi_Film
         sqlCommand.Connection = dbConn
         sqlCommand.CommandText = "SELECT id As 'ID',
                                   nama_film As 'Judul Film',
-                                  genre As 'Genre Film'
-                                  deskripsi As 'Deskripsi'
-                                  director As 'Director'
-                                  duration As 'Duration'
-                                  date_released As 'Tanggal Rilis'
-                                  bahasa As 'Bahasa'
+                                  genre As 'Genre Film',
+                                  deskripsi As 'Deskripsi',
+                                  director As 'Director',
+                                  duration As 'Duration',
+                                  date_released As 'Tanggal Rilis',
+                                  bahasa As 'Bahasa',
                                   harga_film As 'Harga Film'
                                   FROM film"
 
@@ -218,7 +218,14 @@ Public Class Koleksi_Film
         Return result
     End Function
 
-    Public Function AddKoleksiDatabase(Judul_Film As String,
+    Public Function AddKoleksiDatabase(GambarFilm As String,
+                                       Judul_Film As String,
+                                       Genre As String,
+                                       Deskripsi As String,
+                                       Director As String,
+                                       Duration As String,
+                                       Date_Released As String,
+                                       Bahasa As String,
                                        Harga_Film As String)
 
         'MessageBox.Show("Add Koleksi")
@@ -229,8 +236,16 @@ Public Class Koleksi_Film
                 + "password =" + password + ";" + "database = " + database
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "insert into film (nama_film, harga_film) value ('" _
+            sqlQuery = "insert into film (nama_film, gambarbuku, genre, deskripsi, director, duration,
+                        date_released, bahasa, harga_film) value ('" _
                         & Judul_Film & "', '" _
+                        & GambarFilm & "', '" _
+                        & Genre & "', '" _
+                        & Deskripsi & "', '" _
+                        & Director & "', '" _
+                        & Duration & "', '" _
+                        & Date_Released.ToString("yyyy/MM/dd") & "', '" _
+                        & Bahasa & "', '" _
                         & Harga_Film & "')"
 
             Debug.WriteLine(sqlQuery)
@@ -257,6 +272,12 @@ Public Class Koleksi_Film
         sqlCommand.Connection = dbConn
         sqlCommand.CommandText = "SELECT id,
                                   nama_film,
+                                  genre,
+                                  deskripsi,
+                                  director,
+                                  duration,
+                                  date_released,
+                                  bahasa,
                                   harga_film
                                   FROM film
                                   WHERE id='" & ID & "'"
@@ -267,6 +288,12 @@ Public Class Koleksi_Film
             result.Add(sqlRead.GetString(0).ToString())
             result.Add(sqlRead.GetString(1).ToString())
             result.Add(sqlRead.GetString(2).ToString())
+            result.Add(sqlRead.GetString(3).ToString())
+            result.Add(sqlRead.GetString(4).ToString())
+            result.Add(sqlRead.GetString(5).ToString())
+            result.Add(sqlRead.GetString(6).ToString())
+            result.Add(sqlRead.GetString(7).ToString())
+            result.Add(sqlRead.GetString(8).ToString())
         End While
 
         sqlRead.Close()
@@ -276,7 +303,14 @@ Public Class Koleksi_Film
     End Function
 
     Public Function UpdateDataKoleksiByIDDatabase(ID As Integer,
+                                                  GambarFilm As String,
                                                   Judul_Film As String,
+                                                  Genre As String,
+                                                  Deskripsi As String,
+                                                  Director As String,
+                                                  Duration As String,
+                                                  Date_Released As String,
+                                                  Bahasa As String,
                                                   Harga_Film As String)
 
         dbConn.ConnectionString = "Server =" + server + ";" + "user id =" + username + ";" _
@@ -285,9 +319,16 @@ Public Class Koleksi_Film
             dbConn.Open()
             sqlCommand.Connection = dbConn
             sqlQuery = "UPDATE koleksi SET " &
+                       "gambarfilm='" & GambarFilm & "', " &
                        "nama_film='" & Judul_Film & "', " &
+                       "genre='" & Genre & "', " &
+                       "deskripsi='" & Deskripsi & "', " &
+                       "director='" & Director & "', " &
+                       "duration='" & Duration & "', " &
+                       "date_released='" & Date_Released.ToString("yyyy/MM/dd") & "', " &
+                       "bahasa='" & Bahasa & "', " &
                        "harga_film='" & Harga_Film & "', " &
-                       "WHERE idi='" & ID & "'"
+                       "WHERE id='" & ID & "'"
 
             Debug.WriteLine(sqlQuery)
 

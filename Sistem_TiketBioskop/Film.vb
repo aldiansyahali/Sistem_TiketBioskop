@@ -33,7 +33,13 @@
         For Each rowKoleksi In Koleksi.getKoleksiDataTable()
             Dim dataTable As String() = {rowKoleksi(1),
                                          rowKoleksi(2),
-                                         rowKoleksi(3)}
+                                         rowKoleksi(3),
+                                         rowKoleksi(4),
+                                         rowKoleksi(5),
+                                         rowKoleksi(6),
+                                         rowKoleksi(7),
+                                         rowKoleksi(8),
+                                         rowKoleksi(9)}
             DataGridViewFilm.Rows.Add(dataTable)
         Next
     End Sub
@@ -55,10 +61,17 @@
             Dim selectedkoleksi As List(Of String) = Koleksi.GetDataKoleksiByIDDatabase(selectedTableKoleksi)
 
             Koleksi.Judul_FilmProperty = selectedkoleksi(1)
-            Koleksi.Harga_FilmProperty = selectedkoleksi(2)
+            Koleksi.GambarFilmProperty = selectedkoleksi(2)
+            Koleksi.GenreProperty = selectedkoleksi(3)
+            Koleksi.DeskripsiProperty = selectedkoleksi(4)
+            Koleksi.DirectorProperty = selectedkoleksi(5)
+            Koleksi.DurationProperty = selectedkoleksi(6)
+            Koleksi.Date_ReleasedProperty = selectedkoleksi(7)
+            Koleksi.BahasaProperty = selectedkoleksi(8)
+            Koleksi.Harga_FilmProperty = selectedkoleksi(9)
 
             Dim formupdate = New Edit_Film()
-            formupdate.Show()
+            Edit_Film.Show()
         End If
     End Sub
 

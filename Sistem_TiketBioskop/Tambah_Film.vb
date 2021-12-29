@@ -36,6 +36,13 @@
         Dim convertedKoleksi = Film.Koleksi.ConvertKoleksiToString(Film.Koleksi.getKategoriItem)
         MessageBox.Show(convertedKoleksi)
         Film.Koleksi.AddKoleksiDatabase(Film.Koleksi.Judul_FilmProperty,
+                                        Film.Koleksi.GambarFilmProperty,
+                                        Film.Koleksi.GenreProperty,
+                                        Film.Koleksi.DeskripsiProperty,
+                                        Film.Koleksi.DirectorProperty,
+                                        Film.Koleksi.DurationProperty,
+                                        Film.Koleksi.Date_ReleasedProperty,
+                                        Film.Koleksi.BahasaProperty,
                                         Film.Koleksi.Harga_FilmProperty)
         'Buka Form Info Koleksi
         '==========================================================

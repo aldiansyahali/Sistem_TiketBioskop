@@ -3,14 +3,20 @@
     Public Sub New()
 
         ' This call is required by the designer.
+        CStudio = New CStudio()
+
         InitializeComponent()
 
-        CStudio = New CStudio
+        ReloadDataTableDatabase()
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
 
+    Private Sub Studio_Activated(sender As Object, e As EventArgs) Handles Me.Activated
 
+        ReloadDataTableDatabase()
+
+    End Sub
 
     Private Sub ReloadDataTableDatabase()
         DGStudio.DataSource = CStudio.GetDataStudioDatabase()
@@ -26,7 +32,4 @@
         tambah_studio.Show()
     End Sub
 
-    Private Sub Studio_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        ReloadDataTableDatabase()
-    End Sub
 End Class

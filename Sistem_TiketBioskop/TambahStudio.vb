@@ -13,9 +13,11 @@ Public Class TambahStudio
         Studio.CStudio.kapasitasProperty = Integer.Parse(TxtKapasitas.Text)
         Studio.CStudio.harga_kursiProperty = Integer.Parse(TxtHargaKursi.Text)
 
-        Me.Close()
 
         Studio.CStudio.AddDataStudioDatabase(Studio.CStudio.kapasitasProperty,
                                              Studio.CStudio.harga_kursiProperty)
+
+        Me.Close()
+
     End Sub
 End Class

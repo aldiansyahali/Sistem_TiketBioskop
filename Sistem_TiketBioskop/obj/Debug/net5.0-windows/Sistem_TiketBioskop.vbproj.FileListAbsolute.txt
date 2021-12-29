@@ -23,8 +23,11 @@ C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\ne
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\MySql.Data.dll
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\ZstdNet.dll
-C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Home.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.SignIn.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.SignUp.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Tiket.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.CopyComplete
+C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\FontAwesome.Sharp.dll
+C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.EditStudio.resources
+C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Studio.resources
+C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.TambahStudio.resources

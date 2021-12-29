@@ -26,7 +26,7 @@ Partial Class TambahStudio
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TxtKapasitas = New System.Windows.Forms.TextBox()
         Me.TxtHargaKursi = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnSimpan = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -61,21 +61,21 @@ Partial Class TambahStudio
         Me.TxtHargaKursi.Size = New System.Drawing.Size(174, 27)
         Me.TxtHargaKursi.TabIndex = 3
         '
-        'Button1
+        'BtnSimpan
         '
-        Me.Button1.Location = New System.Drawing.Point(230, 155)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Simpan"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnSimpan.Location = New System.Drawing.Point(230, 155)
+        Me.BtnSimpan.Name = "BtnSimpan"
+        Me.BtnSimpan.Size = New System.Drawing.Size(94, 29)
+        Me.BtnSimpan.TabIndex = 4
+        Me.BtnSimpan.Text = "Simpan"
+        Me.BtnSimpan.UseVisualStyleBackColor = True
         '
         'TambahStudio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(379, 259)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnSimpan)
         Me.Controls.Add(Me.TxtHargaKursi)
         Me.Controls.Add(Me.TxtKapasitas)
         Me.Controls.Add(Me.Label2)
@@ -91,5 +91,5 @@ Partial Class TambahStudio
     Friend WithEvents Label2 As Label
     Friend WithEvents TxtKapasitas As TextBox
     Friend WithEvents TxtHargaKursi As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnSimpan As Button
 End Class

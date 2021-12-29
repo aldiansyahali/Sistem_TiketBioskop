@@ -42,13 +42,17 @@ Partial Class Tambah_Film
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RBBhs_Inggris = New System.Windows.Forms.RadioButton()
         Me.RB_BhsIndo = New System.Windows.Forms.RadioButton()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BtnTambahGambar = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(39, 115)
+        Me.Label1.Location = New System.Drawing.Point(28, 117)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(75, 20)
         Me.Label1.TabIndex = 0
@@ -57,7 +61,7 @@ Partial Class Tambah_Film
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(39, 175)
+        Me.Label2.Location = New System.Drawing.Point(28, 177)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 20)
         Me.Label2.TabIndex = 1
@@ -66,7 +70,7 @@ Partial Class Tambah_Film
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(39, 378)
+        Me.Label3.Location = New System.Drawing.Point(28, 380)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 20)
         Me.Label3.TabIndex = 2
@@ -75,7 +79,7 @@ Partial Class Tambah_Film
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(501, 175)
+        Me.Label4.Location = New System.Drawing.Point(31, 502)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 20)
         Me.Label4.TabIndex = 3
@@ -84,7 +88,7 @@ Partial Class Tambah_Film
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(501, 375)
+        Me.Label5.Location = New System.Drawing.Point(31, 690)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 20)
         Me.Label5.TabIndex = 4
@@ -93,7 +97,7 @@ Partial Class Tambah_Film
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(501, 111)
+        Me.Label6.Location = New System.Drawing.Point(31, 438)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(67, 20)
         Me.Label6.TabIndex = 5
@@ -101,35 +105,35 @@ Partial Class Tambah_Film
         '
         'TextBoxJudulFilm
         '
-        Me.TextBoxJudulFilm.Location = New System.Drawing.Point(218, 111)
+        Me.TextBoxJudulFilm.Location = New System.Drawing.Point(207, 113)
         Me.TextBoxJudulFilm.Name = "TextBoxJudulFilm"
         Me.TextBoxJudulFilm.Size = New System.Drawing.Size(250, 27)
         Me.TextBoxJudulFilm.TabIndex = 6
         '
         'TextBoxDirector
         '
-        Me.TextBoxDirector.Location = New System.Drawing.Point(218, 375)
+        Me.TextBoxDirector.Location = New System.Drawing.Point(207, 377)
         Me.TextBoxDirector.Name = "TextBoxDirector"
         Me.TextBoxDirector.Size = New System.Drawing.Size(250, 27)
         Me.TextBoxDirector.TabIndex = 8
         '
         'TextBoxDuration
         '
-        Me.TextBoxDuration.Location = New System.Drawing.Point(665, 111)
+        Me.TextBoxDuration.Location = New System.Drawing.Point(207, 438)
         Me.TextBoxDuration.Name = "TextBoxDuration"
         Me.TextBoxDuration.Size = New System.Drawing.Size(250, 27)
         Me.TextBoxDuration.TabIndex = 9
         '
         'TextBoxHargaFilm
         '
-        Me.TextBoxHargaFilm.Location = New System.Drawing.Point(665, 375)
+        Me.TextBoxHargaFilm.Location = New System.Drawing.Point(207, 690)
         Me.TextBoxHargaFilm.Name = "TextBoxHargaFilm"
         Me.TextBoxHargaFilm.Size = New System.Drawing.Size(250, 27)
         Me.TextBoxHargaFilm.TabIndex = 11
         '
         'DateTimePickerReleased
         '
-        Me.DateTimePickerReleased.Location = New System.Drawing.Point(665, 170)
+        Me.DateTimePickerReleased.Location = New System.Drawing.Point(207, 497)
         Me.DateTimePickerReleased.Name = "DateTimePickerReleased"
         Me.DateTimePickerReleased.Size = New System.Drawing.Size(250, 27)
         Me.DateTimePickerReleased.TabIndex = 12
@@ -138,7 +142,7 @@ Partial Class Tambah_Film
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(363, 28)
+        Me.Label7.Location = New System.Drawing.Point(275, 27)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(220, 34)
         Me.Label7.TabIndex = 13
@@ -146,9 +150,9 @@ Partial Class Tambah_Film
         '
         'BtnSimpan
         '
-        Me.BtnSimpan.Location = New System.Drawing.Point(416, 435)
+        Me.BtnSimpan.Location = New System.Drawing.Point(626, 690)
         Me.BtnSimpan.Name = "BtnSimpan"
-        Me.BtnSimpan.Size = New System.Drawing.Size(94, 39)
+        Me.BtnSimpan.Size = New System.Drawing.Size(97, 40)
         Me.BtnSimpan.TabIndex = 14
         Me.BtnSimpan.Text = "Simpan"
         Me.BtnSimpan.UseVisualStyleBackColor = True
@@ -157,7 +161,7 @@ Partial Class Tambah_Film
         '
         Me.ComboBoxGenre.FormattingEnabled = True
         Me.ComboBoxGenre.Items.AddRange(New Object() {"Drama", "Action", "Comedy", "Horor"})
-        Me.ComboBoxGenre.Location = New System.Drawing.Point(218, 167)
+        Me.ComboBoxGenre.Location = New System.Drawing.Point(207, 169)
         Me.ComboBoxGenre.Name = "ComboBoxGenre"
         Me.ComboBoxGenre.Size = New System.Drawing.Size(250, 28)
         Me.ComboBoxGenre.TabIndex = 15
@@ -165,7 +169,7 @@ Partial Class Tambah_Film
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(39, 257)
+        Me.Label8.Location = New System.Drawing.Point(28, 259)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(69, 20)
         Me.Label8.TabIndex = 16
@@ -173,7 +177,7 @@ Partial Class Tambah_Film
         '
         'RichTextBoxDeskripsi
         '
-        Me.RichTextBoxDeskripsi.Location = New System.Drawing.Point(218, 238)
+        Me.RichTextBoxDeskripsi.Location = New System.Drawing.Point(207, 240)
         Me.RichTextBoxDeskripsi.Name = "RichTextBoxDeskripsi"
         Me.RichTextBoxDeskripsi.Size = New System.Drawing.Size(250, 94)
         Me.RichTextBoxDeskripsi.TabIndex = 17
@@ -182,7 +186,7 @@ Partial Class Tambah_Film
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(501, 257)
+        Me.Label9.Location = New System.Drawing.Point(31, 584)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 20)
         Me.Label9.TabIndex = 18
@@ -192,7 +196,7 @@ Partial Class Tambah_Film
         '
         Me.GroupBox1.Controls.Add(Me.RBBhs_Inggris)
         Me.GroupBox1.Controls.Add(Me.RB_BhsIndo)
-        Me.GroupBox1.Location = New System.Drawing.Point(665, 226)
+        Me.GroupBox1.Location = New System.Drawing.Point(207, 553)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(250, 106)
         Me.GroupBox1.TabIndex = 19
@@ -221,11 +225,34 @@ Partial Class Tambah_Film
         Me.RB_BhsIndo.Text = "Bahasa Indonesia"
         Me.RB_BhsIndo.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(504, 113)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(219, 221)
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
+        '
+        'BtnTambahGambar
+        '
+        Me.BtnTambahGambar.Location = New System.Drawing.Point(504, 354)
+        Me.BtnTambahGambar.Name = "BtnTambahGambar"
+        Me.BtnTambahGambar.Size = New System.Drawing.Size(219, 29)
+        Me.BtnTambahGambar.TabIndex = 21
+        Me.BtnTambahGambar.Text = "Tambah Gambar"
+        Me.BtnTambahGambar.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Tambah_Film
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(948, 497)
+        Me.ClientSize = New System.Drawing.Size(766, 759)
+        Me.Controls.Add(Me.BtnTambahGambar)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.RichTextBoxDeskripsi)
@@ -248,6 +275,7 @@ Partial Class Tambah_Film
         Me.Text = "Tambah_Film"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -273,4 +301,7 @@ Partial Class Tambah_Film
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents RBBhs_Inggris As RadioButton
     Friend WithEvents RB_BhsIndo As RadioButton
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BtnTambahGambar As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

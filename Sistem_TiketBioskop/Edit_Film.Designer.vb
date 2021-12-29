@@ -42,14 +42,18 @@ Partial Class Edit_Film
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnTambahGambar = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(428, 442)
+        Me.BtnEdit.Location = New System.Drawing.Point(617, 695)
         Me.BtnEdit.Name = "BtnEdit"
-        Me.BtnEdit.Size = New System.Drawing.Size(94, 39)
+        Me.BtnEdit.Size = New System.Drawing.Size(100, 39)
         Me.BtnEdit.TabIndex = 32
         Me.BtnEdit.Text = "Edit"
         Me.BtnEdit.UseVisualStyleBackColor = True
@@ -58,7 +62,7 @@ Partial Class Edit_Film
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Verdana", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(401, 24)
+        Me.Label7.Location = New System.Drawing.Point(306, 32)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(155, 34)
         Me.Label7.TabIndex = 31
@@ -68,7 +72,7 @@ Partial Class Edit_Film
         '
         Me.GroupBox1.Controls.Add(Me.RBBhs_Inggris)
         Me.GroupBox1.Controls.Add(Me.RB_BhsIndo)
-        Me.GroupBox1.Location = New System.Drawing.Point(658, 224)
+        Me.GroupBox1.Location = New System.Drawing.Point(211, 553)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(250, 106)
         Me.GroupBox1.TabIndex = 48
@@ -100,7 +104,7 @@ Partial Class Edit_Film
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(494, 255)
+        Me.Label9.Location = New System.Drawing.Point(33, 584)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 20)
         Me.Label9.TabIndex = 47
@@ -134,21 +138,21 @@ Partial Class Edit_Film
         '
         'DateTimePickerReleased
         '
-        Me.DateTimePickerReleased.Location = New System.Drawing.Point(658, 168)
+        Me.DateTimePickerReleased.Location = New System.Drawing.Point(211, 497)
         Me.DateTimePickerReleased.Name = "DateTimePickerReleased"
         Me.DateTimePickerReleased.Size = New System.Drawing.Size(250, 27)
         Me.DateTimePickerReleased.TabIndex = 43
         '
         'TextBoxHargaFilm
         '
-        Me.TextBoxHargaFilm.Location = New System.Drawing.Point(658, 373)
+        Me.TextBoxHargaFilm.Location = New System.Drawing.Point(211, 695)
         Me.TextBoxHargaFilm.Name = "TextBoxHargaFilm"
         Me.TextBoxHargaFilm.Size = New System.Drawing.Size(250, 27)
         Me.TextBoxHargaFilm.TabIndex = 42
         '
         'TextBoxDuration
         '
-        Me.TextBoxDuration.Location = New System.Drawing.Point(658, 109)
+        Me.TextBoxDuration.Location = New System.Drawing.Point(211, 438)
         Me.TextBoxDuration.Name = "TextBoxDuration"
         Me.TextBoxDuration.Size = New System.Drawing.Size(250, 27)
         Me.TextBoxDuration.TabIndex = 41
@@ -170,7 +174,7 @@ Partial Class Edit_Film
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(494, 109)
+        Me.Label6.Location = New System.Drawing.Point(33, 438)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(67, 20)
         Me.Label6.TabIndex = 38
@@ -179,7 +183,7 @@ Partial Class Edit_Film
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(494, 373)
+        Me.Label5.Location = New System.Drawing.Point(33, 695)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 20)
         Me.Label5.TabIndex = 37
@@ -188,7 +192,7 @@ Partial Class Edit_Film
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(494, 173)
+        Me.Label4.Location = New System.Drawing.Point(33, 502)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 20)
         Me.Label4.TabIndex = 36
@@ -221,11 +225,34 @@ Partial Class Edit_Film
         Me.Label1.TabIndex = 33
         Me.Label1.Text = "Judul Film"
         '
+        'BtnTambahGambar
+        '
+        Me.BtnTambahGambar.Location = New System.Drawing.Point(498, 354)
+        Me.BtnTambahGambar.Name = "BtnTambahGambar"
+        Me.BtnTambahGambar.Size = New System.Drawing.Size(219, 29)
+        Me.BtnTambahGambar.TabIndex = 50
+        Me.BtnTambahGambar.Text = "Tambah Gambar"
+        Me.BtnTambahGambar.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(498, 113)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(219, 221)
+        Me.PictureBox1.TabIndex = 49
+        Me.PictureBox1.TabStop = False
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Edit_Film
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(941, 509)
+        Me.ClientSize = New System.Drawing.Size(760, 755)
+        Me.Controls.Add(Me.BtnTambahGambar)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.RichTextBoxDeskripsi)
@@ -248,6 +275,7 @@ Partial Class Edit_Film
         Me.Text = "Edit_Film"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -272,4 +300,7 @@ Partial Class Edit_Film
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents BtnTambahGambar As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

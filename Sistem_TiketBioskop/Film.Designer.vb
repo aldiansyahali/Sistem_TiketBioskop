@@ -22,23 +22,23 @@ Partial Class Film
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewFilm = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BtnEdit = New System.Windows.Forms.Button()
         Me.BtnHapus = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridViewFilm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'DataGridViewFilm
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(26, 99)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(482, 152)
-        Me.DataGridView1.TabIndex = 0
+        Me.DataGridViewFilm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewFilm.Location = New System.Drawing.Point(26, 99)
+        Me.DataGridViewFilm.Name = "DataGridViewFilm"
+        Me.DataGridViewFilm.RowHeadersWidth = 51
+        Me.DataGridViewFilm.RowTemplate.Height = 29
+        Me.DataGridViewFilm.Size = New System.Drawing.Size(482, 152)
+        Me.DataGridViewFilm.TabIndex = 0
         '
         'Label1
         '
@@ -86,16 +86,16 @@ Partial Class Film
         Me.Controls.Add(Me.BtnEdit)
         Me.Controls.Add(Me.BtnTambah)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DataGridViewFilm)
         Me.Name = "Film"
         Me.Text = "Film"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewFilm, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGridViewFilm As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnTambah As Button
     Friend WithEvents BtnEdit As Button

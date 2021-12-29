@@ -8,14 +8,12 @@
 
         ' Add any initialization after the InitializeComponent() call.
         NamaFilm = Film.selectedTableKoleksiNama.ToString()
-        TextBoxJudulFilm.Text = NamaFilm
-
     End Sub
 
     Private Sub BtnHapus_Click(sender As Object, e As EventArgs) Handles BtnHapus.Click
         ''Form_Perpustakaan.Koleksi.RemoveKoleksi(namakoleksi)
         'Form_Perpustakaan.selectedkoleksi = ""
-        Film.Koleksi_Film.RemoveDataKoleksiByIDDatabase(Film.selectedTableKoleksi)
+        Film.Koleksi.RemoveDataKoleksiByIDDatabase(Film.selectedTableKoleksi)
 
         Me.Close()
     End Sub

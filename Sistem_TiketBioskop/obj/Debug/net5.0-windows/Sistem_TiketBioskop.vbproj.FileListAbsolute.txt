@@ -20,3 +20,12 @@ C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\o
 C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\ref\Sistem_TiketBioskop.dll
 C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.pdb
 C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.genruntimeconfig.cache
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Google.Protobuf.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\MySql.Data.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\ZstdNet.dll
+C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.CopyComplete

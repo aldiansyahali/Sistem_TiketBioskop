@@ -79,7 +79,7 @@ Partial Class Tambah_Film
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(31, 502)
+        Me.Label4.Location = New System.Drawing.Point(28, 502)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 20)
         Me.Label4.TabIndex = 3
@@ -88,7 +88,7 @@ Partial Class Tambah_Film
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(31, 690)
+        Me.Label5.Location = New System.Drawing.Point(28, 690)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 20)
         Me.Label5.TabIndex = 4
@@ -97,7 +97,7 @@ Partial Class Tambah_Film
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(31, 438)
+        Me.Label6.Location = New System.Drawing.Point(28, 438)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(67, 20)
         Me.Label6.TabIndex = 5
@@ -186,7 +186,7 @@ Partial Class Tambah_Film
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(31, 584)
+        Me.Label9.Location = New System.Drawing.Point(28, 584)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 20)
         Me.Label9.TabIndex = 18

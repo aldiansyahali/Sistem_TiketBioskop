@@ -39,7 +39,7 @@ Partial Class Studio
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudioToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(487, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(504, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -59,16 +59,16 @@ Partial Class Studio
         'DGStudio
         '
         Me.DGStudio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGStudio.Location = New System.Drawing.Point(21, 61)
+        Me.DGStudio.Location = New System.Drawing.Point(24, 58)
         Me.DGStudio.Name = "DGStudio"
         Me.DGStudio.RowHeadersWidth = 51
         Me.DGStudio.RowTemplate.Height = 29
-        Me.DGStudio.Size = New System.Drawing.Size(431, 188)
+        Me.DGStudio.Size = New System.Drawing.Size(431, 204)
         Me.DGStudio.TabIndex = 1
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(358, 264)
+        Me.BtnTambah.Location = New System.Drawing.Point(361, 273)
         Me.BtnTambah.Name = "BtnTambah"
         Me.BtnTambah.Size = New System.Drawing.Size(94, 29)
         Me.BtnTambah.TabIndex = 2
@@ -77,7 +77,7 @@ Partial Class Studio
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(158, 264)
+        Me.BtnHapus.Location = New System.Drawing.Point(161, 273)
         Me.BtnHapus.Name = "BtnHapus"
         Me.BtnHapus.Size = New System.Drawing.Size(94, 29)
         Me.BtnHapus.TabIndex = 3
@@ -86,7 +86,7 @@ Partial Class Studio
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(258, 264)
+        Me.BtnEdit.Location = New System.Drawing.Point(261, 273)
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.Size = New System.Drawing.Size(94, 29)
         Me.BtnEdit.TabIndex = 4
@@ -97,7 +97,7 @@ Partial Class Studio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(487, 343)
+        Me.ClientSize = New System.Drawing.Size(504, 338)
         Me.Controls.Add(Me.BtnEdit)
         Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.BtnTambah)

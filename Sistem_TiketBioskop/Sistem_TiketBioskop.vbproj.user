@@ -4,6 +4,9 @@
     <Compile Update="EditStudio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="HapusStudio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Studio.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -31,3 +31,4 @@ C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\ne
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.pdb
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.genruntimeconfig.cache
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.AssemblyReference.cache
+C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.HapusStudio.resources

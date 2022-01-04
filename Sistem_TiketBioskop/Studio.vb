@@ -1,6 +1,7 @@
 ﻿Public Class Studio
     Public Shared CStudio As CStudio
     Public Shared SelectedTableStudio As String
+    Public Shadows selectedTableNomorStudio As String
     Public Sub New()
 
         ' This call is required by the designer.
@@ -25,6 +26,7 @@
         selectedRow = DGStudio.Rows(index)
 
         SelectedTableStudio = selectedRow.Cells(0).Value
+        selectedTableNomorStudio = selectedRow.Cells(1).Value
     End Sub
 
     Private Sub ReloadDataTableDatabase()
@@ -62,5 +64,8 @@
         SignIn.Show()
     End Sub
 
-
+    Private Sub BtnHapus_Click(sender As Object, e As EventArgs) Handles BtnHapus.Click
+        Dim form_hapus = New HapusStudio()
+        form_hapus.Show()
+    End Sub
 End Class

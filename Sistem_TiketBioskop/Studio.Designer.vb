@@ -29,6 +29,7 @@ Partial Class Studio
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BtnHapus = New System.Windows.Forms.Button()
         Me.BtnEdit = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DGStudio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -59,7 +60,7 @@ Partial Class Studio
         'DGStudio
         '
         Me.DGStudio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGStudio.Location = New System.Drawing.Point(24, 58)
+        Me.DGStudio.Location = New System.Drawing.Point(24, 116)
         Me.DGStudio.Name = "DGStudio"
         Me.DGStudio.RowHeadersWidth = 51
         Me.DGStudio.RowTemplate.Height = 29
@@ -68,7 +69,7 @@ Partial Class Studio
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(361, 273)
+        Me.BtnTambah.Location = New System.Drawing.Point(361, 331)
         Me.BtnTambah.Name = "BtnTambah"
         Me.BtnTambah.Size = New System.Drawing.Size(94, 29)
         Me.BtnTambah.TabIndex = 2
@@ -77,7 +78,7 @@ Partial Class Studio
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(161, 273)
+        Me.BtnHapus.Location = New System.Drawing.Point(161, 331)
         Me.BtnHapus.Name = "BtnHapus"
         Me.BtnHapus.Size = New System.Drawing.Size(94, 29)
         Me.BtnHapus.TabIndex = 3
@@ -86,18 +87,29 @@ Partial Class Studio
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(261, 273)
+        Me.BtnEdit.Location = New System.Drawing.Point(261, 331)
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.Size = New System.Drawing.Size(94, 29)
         Me.BtnEdit.TabIndex = 4
         Me.BtnEdit.Text = "Edit"
         Me.BtnEdit.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(171, 68)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(136, 31)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Data Studio"
+        '
         'Studio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(504, 338)
+        Me.ClientSize = New System.Drawing.Size(504, 414)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnEdit)
         Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.BtnTambah)
@@ -121,4 +133,5 @@ Partial Class Studio
     Friend WithEvents BtnTambah As Button
     Friend WithEvents BtnHapus As Button
     Friend WithEvents BtnEdit As Button
+    Friend WithEvents Label1 As Label
 End Class

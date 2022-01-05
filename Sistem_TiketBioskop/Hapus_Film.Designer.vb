@@ -24,7 +24,7 @@ Partial Class Hapus_Film
     Private Sub InitializeComponent()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LabelNamaFilm = New System.Windows.Forms.Label()
         Me.BtnHapus = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -48,16 +48,16 @@ Partial Class Hapus_Film
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Yakin ingin menghapus koleksi film ini?"
         '
-        'Label2
+        'LabelNamaFilm
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(128, 168)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(126, 31)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Nama Film"
+        Me.LabelNamaFilm.AutoSize = True
+        Me.LabelNamaFilm.Font = New System.Drawing.Font("Segoe UI Semibold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LabelNamaFilm.ForeColor = System.Drawing.Color.Red
+        Me.LabelNamaFilm.Location = New System.Drawing.Point(128, 168)
+        Me.LabelNamaFilm.Name = "LabelNamaFilm"
+        Me.LabelNamaFilm.Size = New System.Drawing.Size(126, 31)
+        Me.LabelNamaFilm.TabIndex = 16
+        Me.LabelNamaFilm.Text = "Nama Film"
         '
         'BtnHapus
         '
@@ -74,7 +74,7 @@ Partial Class Hapus_Film
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(402, 330)
         Me.Controls.Add(Me.BtnHapus)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.LabelNamaFilm)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label7)
         Me.Name = "Hapus_Film"
@@ -86,6 +86,6 @@ Partial Class Hapus_Film
 
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents LabelNamaFilm As Label
     Friend WithEvents BtnHapus As Button
 End Class

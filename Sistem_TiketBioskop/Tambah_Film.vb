@@ -9,6 +9,8 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        DateTimePickerReleased.Format = DateTimePickerFormat.Custom
+        DateTimePickerReleased.CustomFormat = "yyyy/MM/dd"
     End Sub
 
     Private Sub BtnTambahGambar_Click(sender As Object, e As EventArgs) Handles BtnTambahGambar.Click
@@ -31,12 +33,18 @@
     Private Sub BtnSimpan_Click(sender As Object, e As EventArgs) Handles BtnSimpan.Click
 
         Film.Koleksi.Judul_FilmProperty = TextBoxJudulFilm.Text.ToString()
+        Film.Koleksi.GenreProperty = ComboBoxGenre.SelectedItem().ToString()
+        Film.Koleksi.DeskripsiProperty = RichTextBoxDeskripsi.Text.ToString()
+        Film.Koleksi.DirectorProperty = TextBoxDirector.Text.ToString()
+        Film.Koleksi.DurationProperty = TextBoxDuration.Text.ToString()
+        Film.Koleksi.Date_ReleasedProperty = DateTimePickerReleased.Value.ToString("yyyy/MM/dd")
+        Film.Koleksi.BahasaProperty = Bhs.ToString()
         Film.Koleksi.Harga_FilmProperty = TextBoxHargaFilm.Text.ToString()
 
         Dim convertedKoleksi = Film.Koleksi.ConvertKoleksiToString(Film.Koleksi.getKategoriItem)
-        MessageBox.Show(convertedKoleksi)
-        Film.Koleksi.AddKoleksiDatabase(Film.Koleksi.Judul_FilmProperty,
-                                        Film.Koleksi.GambarFilmProperty,
+        'MessageBox.Show(convertedKoleksi)
+        Film.Koleksi.AddKoleksiDatabase(Film.Koleksi.GambarFilmProperty,
+                                        Film.Koleksi.Judul_FilmProperty,
                                         Film.Koleksi.GenreProperty,
                                         Film.Koleksi.DeskripsiProperty,
                                         Film.Koleksi.DirectorProperty,
@@ -44,21 +52,15 @@
                                         Film.Koleksi.Date_ReleasedProperty,
                                         Film.Koleksi.BahasaProperty,
                                         Film.Koleksi.Harga_FilmProperty)
-        'Buka Form Info Koleksi
-        '==========================================================
-        'Form_Perpustakaan.Koleksi.addKoleksi(TextBoxNama.Text)
-        Dim InfoTambahKoleksi_form = New Film()
-        Film.Show()
-        Me.Close()
 
-        'Form_Perpustakaan.Koleksi.addKoleksi(Form_Perpustakaan.Koleksi.Nama_KoleksiProperty)
+        Me.Close()
     End Sub
 
-    Private Sub RadioButtonIndo_CheckedChanged(sender As Object, e As EventArgs) Handles RB_BhsIndo.CheckedChanged
+    Private Sub RB_BhsIndo_CheckedChanged(sender As Object, e As EventArgs) Handles RB_BhsIndo.CheckedChanged
         Bhs = "Bahasa Indonesia"
     End Sub
 
-    Private Sub RadioButtonIng_CheckedChanged(sender As Object, e As EventArgs) Handles RBBhs_Inggris.CheckedChanged
+    Private Sub RBBhs_Inggris_CheckedChanged(sender As Object, e As EventArgs) Handles RBBhs_Inggris.CheckedChanged
         Bhs = "Bahasa Inggris"
     End Sub
 End Class

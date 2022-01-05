@@ -199,7 +199,7 @@ Public Class Koleksi_Film
             + "password =" + password + ";" + "database = " + database
         dbConn.Open()
         sqlCommand.Connection = dbConn
-        sqlCommand.CommandText = "SELECT id As 'ID',
+        sqlCommand.CommandText = "SELECT id_film As 'ID',
                                   nama_film As 'Judul Film',
                                   genre As 'Genre Film',
                                   deskripsi As 'Deskripsi',
@@ -228,15 +228,12 @@ Public Class Koleksi_Film
                                        Bahasa As String,
                                        Harga_Film As String)
 
-        'MessageBox.Show("Add Koleksi")
-        'dbConn.ConnectionString = "Server =" + server + ";" + "user id =" + username + ";" _
-        '    + "password =" + password + ";" + "database = " + database
         Try
             dbConn.ConnectionString = "server =" + server + ";" + "user id =" + username + ";" _
                 + "password =" + password + ";" + "database = " + database
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "insert into film (nama_film, gambarbuku, genre, deskripsi, director, duration,
+            sqlQuery = "insert into film (nama_film, gambarfilm, genre, deskripsi, director, duration,
                         date_released, bahasa, harga_film) value ('" _
                         & Judul_Film & "', '" _
                         & GambarFilm & "', '" _
@@ -244,7 +241,7 @@ Public Class Koleksi_Film
                         & Deskripsi & "', '" _
                         & Director & "', '" _
                         & Duration & "', '" _
-                        & Date_Released.ToString("yyyy/MM/dd") & "', '" _
+                        & Date_Released & "', '" _
                         & Bahasa & "', '" _
                         & Harga_Film & "')"
 
@@ -270,8 +267,9 @@ Public Class Koleksi_Film
                                    + "password =" + password + ";" + "database = " + database
         dbConn.Open()
         sqlCommand.Connection = dbConn
-        sqlCommand.CommandText = "SELECT id,
+        sqlCommand.CommandText = "SELECT id_film,
                                   nama_film,
+                                  gambarfilm,
                                   genre,
                                   deskripsi,
                                   director,
@@ -280,7 +278,7 @@ Public Class Koleksi_Film
                                   bahasa,
                                   harga_film
                                   FROM film
-                                  WHERE id='" & ID & "'"
+                                  WHERE id_film='" & ID & "'"
 
         sqlRead = sqlCommand.ExecuteReader
 
@@ -294,6 +292,7 @@ Public Class Koleksi_Film
             result.Add(sqlRead.GetString(6).ToString())
             result.Add(sqlRead.GetString(7).ToString())
             result.Add(sqlRead.GetString(8).ToString())
+            result.Add(sqlRead.GetString(9).ToString())
         End While
 
         sqlRead.Close()
@@ -318,17 +317,21 @@ Public Class Koleksi_Film
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "UPDATE koleksi SET " &
-                       "gambarfilm='" & GambarFilm & "', " &
+            sqlQuery = "UPDATE film SET " &
                        "nama_film='" & Judul_Film & "', " &
+                       "gambarfilm='" & GambarFilm & "', " &
                        "genre='" & Genre & "', " &
                        "deskripsi='" & Deskripsi & "', " &
                        "director='" & Director & "', " &
                        "duration='" & Duration & "', " &
-                       "date_released='" & Date_Released.ToString("yyyy/MM/dd") & "', " &
+                       "date_released='" & Date_Released & "', " &
                        "bahasa='" & Bahasa & "', " &
-                       "harga_film='" & Harga_Film & "', " &
-                       "WHERE id='" & ID & "'"
+                       "harga_film='" & Harga_Film & "' " &
+                       "WHERE id_film='" & ID & "'"
+
+
+
+
 
             Debug.WriteLine(sqlQuery)
 
@@ -354,7 +357,7 @@ Public Class Koleksi_Film
             dbConn.Open()
             sqlCommand.Connection = dbConn
             sqlQuery = "DELETE From film " &
-                       "WHERE id='" & ID & "'"
+                       "WHERE id_film='" & ID & "'"
 
             Debug.WriteLine(sqlQuery)
 
@@ -371,4 +374,5 @@ Public Class Koleksi_Film
             dbConn.Dispose()
         End Try
     End Function
+
 End Class

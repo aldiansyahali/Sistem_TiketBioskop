@@ -39,12 +39,13 @@
                                          rowKoleksi(6),
                                          rowKoleksi(7),
                                          rowKoleksi(8),
-                                         rowKoleksi(9)}
+                                         rowKoleksi(9),
+                                         rowKoleksi(10)}
             DataGridViewFilm.Rows.Add(dataTable)
         Next
     End Sub
 
-    Private Sub DataGridKoleksi_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewFilm.CellClick
+    Private Sub DataGridViewFilm_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewFilm.CellClick
         'selectedkoleksi = DataGridKoleksi.CurrentRow.Index
         Dim index As Integer = e.RowIndex
         Dim selectedRow As DataGridViewRow
@@ -60,8 +61,8 @@
 
             Dim selectedkoleksi As List(Of String) = Koleksi.GetDataKoleksiByIDDatabase(selectedTableKoleksi)
 
-            Koleksi.Judul_FilmProperty = selectedkoleksi(1)
             Koleksi.GambarFilmProperty = selectedkoleksi(2)
+            Koleksi.Judul_FilmProperty = selectedkoleksi(1)
             Koleksi.GenreProperty = selectedkoleksi(3)
             Koleksi.DeskripsiProperty = selectedkoleksi(4)
             Koleksi.DirectorProperty = selectedkoleksi(5)

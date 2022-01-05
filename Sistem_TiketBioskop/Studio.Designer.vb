@@ -30,6 +30,8 @@ Partial Class Studio
         Me.BtnHapus = New System.Windows.Forms.Button()
         Me.BtnEdit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JadwalTayangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DGStudio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -37,7 +39,7 @@ Partial Class Studio
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudioToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudioToolStripMenuItem, Me.FilmToolStripMenuItem, Me.JadwalTayangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(504, 28)
@@ -104,6 +106,18 @@ Partial Class Studio
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Data Studio"
         '
+        'FilmToolStripMenuItem
+        '
+        Me.FilmToolStripMenuItem.Name = "FilmToolStripMenuItem"
+        Me.FilmToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
+        Me.FilmToolStripMenuItem.Text = "Film"
+        '
+        'JadwalTayangToolStripMenuItem
+        '
+        Me.JadwalTayangToolStripMenuItem.Name = "JadwalTayangToolStripMenuItem"
+        Me.JadwalTayangToolStripMenuItem.Size = New System.Drawing.Size(118, 24)
+        Me.JadwalTayangToolStripMenuItem.Text = "Jadwal Tayang"
+        '
         'Studio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -134,4 +148,6 @@ Partial Class Studio
     Friend WithEvents BtnHapus As Button
     Friend WithEvents BtnEdit As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents JadwalTayangToolStripMenuItem As ToolStripMenuItem
 End Class

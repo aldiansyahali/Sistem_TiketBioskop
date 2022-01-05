@@ -39,4 +39,7 @@
         Next
     End Sub
 
+    Private Sub ButtonTambah_Click(sender As Object, e As EventArgs) Handles ButtonTambah.Click
+
+    End Sub
 End Class

@@ -227,7 +227,7 @@ Partial Class Edit_Film
         '
         'BtnTambahGambar
         '
-        Me.BtnTambahGambar.Location = New System.Drawing.Point(498, 354)
+        Me.BtnTambahGambar.Location = New System.Drawing.Point(498, 389)
         Me.BtnTambahGambar.Name = "BtnTambahGambar"
         Me.BtnTambahGambar.Size = New System.Drawing.Size(219, 29)
         Me.BtnTambahGambar.TabIndex = 50
@@ -238,7 +238,7 @@ Partial Class Edit_Film
         '
         Me.PictureBox1.Location = New System.Drawing.Point(498, 113)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(219, 221)
+        Me.PictureBox1.Size = New System.Drawing.Size(219, 258)
         Me.PictureBox1.TabIndex = 49
         Me.PictureBox1.TabStop = False
         '

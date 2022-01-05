@@ -229,13 +229,13 @@ Partial Class Tambah_Film
         '
         Me.PictureBox1.Location = New System.Drawing.Point(504, 113)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(219, 221)
+        Me.PictureBox1.Size = New System.Drawing.Size(219, 260)
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
         'BtnTambahGambar
         '
-        Me.BtnTambahGambar.Location = New System.Drawing.Point(504, 354)
+        Me.BtnTambahGambar.Location = New System.Drawing.Point(504, 393)
         Me.BtnTambahGambar.Name = "BtnTambahGambar"
         Me.BtnTambahGambar.Size = New System.Drawing.Size(219, 29)
         Me.BtnTambahGambar.TabIndex = 21

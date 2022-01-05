@@ -108,10 +108,12 @@ Public Class Koleksi_Film
             Harga_Film = value
         End Set
     End Property
+
     Public Function AddKategori(value As String)
         Kategori.Add(value)
         Return ""
     End Function
+
     Public ReadOnly Property getKategoriItem() As List(Of String)
         Get
             Return Kategori
@@ -329,10 +331,6 @@ Public Class Koleksi_Film
                        "harga_film='" & Harga_Film & "' " &
                        "WHERE id_film='" & ID & "'"
 
-
-
-
-
             Debug.WriteLine(sqlQuery)
 
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
@@ -374,5 +372,4 @@ Public Class Koleksi_Film
             dbConn.Dispose()
         End Try
     End Function
-
 End Class

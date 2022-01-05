@@ -16,6 +16,7 @@
         'UpdateDataTableArrayList()
         ReloadDataTableDatabase()
     End Sub
+
     Private Sub ReloadDataTableDatabase()
         DataGridViewFilm.DataSource = Koleksi.GetDataKoleksiDatabase()
     End Sub
@@ -24,10 +25,12 @@
         Dim button_tambah = New Tambah_Film()
         button_tambah.Show()
     End Sub
+
     Private Sub Film_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         'UpdateDataTableArrayList()
         ReloadDataTableDatabase()
     End Sub
+
     Public Sub UpdateDataTableArrayList()
         DataGridViewFilm.Rows.Clear()
         For Each rowKoleksi In Koleksi.getKoleksiDataTable()

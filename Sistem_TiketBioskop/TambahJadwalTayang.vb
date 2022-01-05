@@ -10,7 +10,22 @@
     End Sub
 
     Private Sub TambahJadwalTayang_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ReloadComboBoxFilmDatabase()
         ReloadComboBoxStudioDatabase()
+    End Sub
+
+    Private Sub ReloadComboBoxFilmDatabase()
+        Dim data_film As New DataTable()
+
+        ComboBoxFilm.Items.Clear()
+        data_film = CJadwalTayang.GetFilmDatabase()
+
+
+        ComboBoxFilm.DataSource = data_film
+        ComboBoxFilm.DisplayMember = "film"
+        ComboBoxFilm.ValueMember = "id"
+        ComboBoxFilm.SelectedIndex = -1
+
     End Sub
 
     Private Sub ReloadComboBoxStudioDatabase()

@@ -39,4 +39,31 @@ Public Class CJadwalTayang
 
         Return result
     End Function
+
+    Public Function GetFilmDatabase() As DataTable
+        Dim result As New DataTable()
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
+        + "password=" + password + ";" + "database=" + database
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlCommand.CommandText = "SELECT id, film
+                                    FROM film"
+
+            sqlRead = sqlCommand.ExecuteReader
+
+            result.Load(sqlRead)
+
+            sqlRead.Close()
+            dbConn.Close()
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        Finally
+            dbConn.Dispose()
+        End Try
+
+        Return result
+    End Function
 End Class

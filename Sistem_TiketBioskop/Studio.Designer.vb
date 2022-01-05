@@ -115,7 +115,7 @@ Partial Class Studio
         'JadwalTayangToolStripMenuItem
         '
         Me.JadwalTayangToolStripMenuItem.Name = "JadwalTayangToolStripMenuItem"
-        Me.JadwalTayangToolStripMenuItem.Size = New System.Drawing.Size(118, 24)
+        Me.JadwalTayangToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
         Me.JadwalTayangToolStripMenuItem.Text = "Jadwal Tayang"
         '
         'Studio

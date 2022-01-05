@@ -1,7 +1,7 @@
 ﻿Public Class Studio
     Public Shared CStudio As CStudio
     Public Shared SelectedTableStudio As String
-    Public Shadows selectedTableNomorStudio As String
+    Public Shared selectedTableNomorStudio As String
     Public Sub New()
 
         ' This call is required by the designer.
@@ -69,5 +69,10 @@
         form_hapus.Show()
     End Sub
 
+    Private Sub JadwalTayangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JadwalTayangToolStripMenuItem.Click
+        Dim form_jadwaltayang = New JadwalTayang()
+        form_jadwaltayang.Show()
+        Me.Hide()
+    End Sub
 
 End Class

@@ -19,6 +19,9 @@
     <Compile Update="SignUp.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TambahJadwalTayang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TambahStudio.vb">
       <SubType>Form</SubType>
     </Compile>

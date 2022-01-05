@@ -28,7 +28,7 @@ Partial Class JadwalTayang
         Me.StudioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JadwalTayangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DGStudio, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,14 +83,14 @@ Partial Class JadwalTayang
         Me.JadwalTayangToolStripMenuItem.Size = New System.Drawing.Size(118, 24)
         Me.JadwalTayangToolStripMenuItem.Text = "Jadwal Tayang"
         '
-        'Button1
+        'ButtonTambah
         '
-        Me.Button1.Location = New System.Drawing.Point(599, 349)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonTambah.Location = New System.Drawing.Point(599, 349)
+        Me.ButtonTambah.Name = "ButtonTambah"
+        Me.ButtonTambah.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonTambah.TabIndex = 9
+        Me.ButtonTambah.Text = "Tambah"
+        Me.ButtonTambah.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -117,7 +117,7 @@ Partial Class JadwalTayang
         Me.ClientSize = New System.Drawing.Size(763, 431)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonTambah)
         Me.Controls.Add(Me.DGStudio)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -138,7 +138,7 @@ Partial Class JadwalTayang
     Friend WithEvents StudioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents JadwalTayangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonTambah As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
 End Class

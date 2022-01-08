@@ -25,13 +25,14 @@ Partial Class Studio
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.StudioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahStudioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JadwalTayangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DGStudio = New System.Windows.Forms.DataGridView()
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BtnHapus = New System.Windows.Forms.Button()
         Me.BtnEdit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.JadwalTayangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DGStudio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,7 +43,7 @@ Partial Class Studio
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudioToolStripMenuItem, Me.FilmToolStripMenuItem, Me.JadwalTayangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(504, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(613, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -59,6 +60,18 @@ Partial Class Studio
         Me.TambahStudioToolStripMenuItem.Size = New System.Drawing.Size(191, 26)
         Me.TambahStudioToolStripMenuItem.Text = "Tambah Studio"
         '
+        'FilmToolStripMenuItem
+        '
+        Me.FilmToolStripMenuItem.Name = "FilmToolStripMenuItem"
+        Me.FilmToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
+        Me.FilmToolStripMenuItem.Text = "Film"
+        '
+        'JadwalTayangToolStripMenuItem
+        '
+        Me.JadwalTayangToolStripMenuItem.Name = "JadwalTayangToolStripMenuItem"
+        Me.JadwalTayangToolStripMenuItem.Size = New System.Drawing.Size(118, 24)
+        Me.JadwalTayangToolStripMenuItem.Text = "Jadwal Tayang"
+        '
         'DGStudio
         '
         Me.DGStudio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -71,7 +84,7 @@ Partial Class Studio
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(361, 331)
+        Me.BtnTambah.Location = New System.Drawing.Point(487, 116)
         Me.BtnTambah.Name = "BtnTambah"
         Me.BtnTambah.Size = New System.Drawing.Size(94, 29)
         Me.BtnTambah.TabIndex = 2
@@ -80,7 +93,7 @@ Partial Class Studio
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(161, 331)
+        Me.BtnHapus.Location = New System.Drawing.Point(487, 208)
         Me.BtnHapus.Name = "BtnHapus"
         Me.BtnHapus.Size = New System.Drawing.Size(94, 29)
         Me.BtnHapus.TabIndex = 3
@@ -89,7 +102,7 @@ Partial Class Studio
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(261, 331)
+        Me.BtnEdit.Location = New System.Drawing.Point(487, 162)
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.Size = New System.Drawing.Size(94, 29)
         Me.BtnEdit.TabIndex = 4
@@ -106,23 +119,23 @@ Partial Class Studio
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Data Studio"
         '
-        'FilmToolStripMenuItem
+        'Button1
         '
-        Me.FilmToolStripMenuItem.Name = "FilmToolStripMenuItem"
-        Me.FilmToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
-        Me.FilmToolStripMenuItem.Text = "Film"
-        '
-        'JadwalTayangToolStripMenuItem
-        '
-        Me.JadwalTayangToolStripMenuItem.Name = "JadwalTayangToolStripMenuItem"
-        Me.JadwalTayangToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
-        Me.JadwalTayangToolStripMenuItem.Text = "Jadwal Tayang"
+        Me.Button1.BackColor = System.Drawing.Color.Firebrick
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(487, 44)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "SignOut"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Studio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(504, 414)
+        Me.ClientSize = New System.Drawing.Size(613, 352)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnEdit)
         Me.Controls.Add(Me.BtnHapus)
@@ -150,4 +163,5 @@ Partial Class Studio
     Friend WithEvents Label1 As Label
     Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents JadwalTayangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button1 As Button
 End Class

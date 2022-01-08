@@ -1,4 +1,5 @@
-﻿Public Class TambahJadwalTayang
+﻿Imports System.IO
+Public Class TambahJadwalTayang
     Public Shared CJadwalTayang As CJadwalTayang
     Public Sub New()
 
@@ -39,6 +40,19 @@
     End Sub
 
     Private Sub ButtonTambah_Click(sender As Object, e As EventArgs) Handles ButtonTambah.Click
+        JadwalTayang.CJadwalTayang.id_filmProperty = ComboBoxFilm.SelectedValue()
+        JadwalTayang.CJadwalTayang.id_studioProperty = ComboBoxStudio.SelectedItem()
+        JadwalTayang.CJadwalTayang.tanggalProperty = DateTimePicker1.Value.ToString("yyyy/MM/dd")
+        JadwalTayang.CJadwalTayang.waktu_mulaiProperty = ComboBoxMulai.SelectedItem().ToString()
+        JadwalTayang.CJadwalTayang.waktu_selesaiProperty = ComboBoxSelesai.SelectedItem().ToString()
 
+        JadwalTayang.CJadwalTayang.AddDataJadwalTayangDatabase(JadwalTayang.CJadwalTayang.id_filmProperty,
+                                                               JadwalTayang.CJadwalTayang.id_studioProperty,
+                                                               JadwalTayang.CJadwalTayang.tanggalProperty,
+                                                               JadwalTayang.CJadwalTayang.waktu_mulaiProperty,
+                                                               JadwalTayang.CJadwalTayang.waktu_selesaiProperty
+                                                                )
+        Me.Close()
     End Sub
+
 End Class

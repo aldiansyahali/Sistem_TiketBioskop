@@ -31,17 +31,9 @@ Partial Class TambahJadwalTayang
         Me.Label5 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TxtDetikMulai = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TxtMenitMulai = New System.Windows.Forms.TextBox()
-        Me.TxtJamMulai = New System.Windows.Forms.TextBox()
-        Me.TxtJamSelesai = New System.Windows.Forms.TextBox()
-        Me.TxtMenitSelesai = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TxtDetikSelesai = New System.Windows.Forms.TextBox()
         Me.ButtonTambah = New System.Windows.Forms.Button()
+        Me.ComboBoxMulai = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxSelesai = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -127,88 +119,6 @@ Partial Class TambahJadwalTayang
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Waktu Selesai"
         '
-        'TxtDetikMulai
-        '
-        Me.TxtDetikMulai.Location = New System.Drawing.Point(400, 321)
-        Me.TxtDetikMulai.Name = "TxtDetikMulai"
-        Me.TxtDetikMulai.Size = New System.Drawing.Size(68, 27)
-        Me.TxtDetikMulai.TabIndex = 18
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(280, 320)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(17, 28)
-        Me.Label7.TabIndex = 19
-        Me.Label7.Text = ":"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(377, 320)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(17, 28)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = ":"
-        '
-        'TxtMenitMulai
-        '
-        Me.TxtMenitMulai.Location = New System.Drawing.Point(303, 321)
-        Me.TxtMenitMulai.Name = "TxtMenitMulai"
-        Me.TxtMenitMulai.Size = New System.Drawing.Size(68, 27)
-        Me.TxtMenitMulai.TabIndex = 21
-        '
-        'TxtJamMulai
-        '
-        Me.TxtJamMulai.Location = New System.Drawing.Point(205, 321)
-        Me.TxtJamMulai.Name = "TxtJamMulai"
-        Me.TxtJamMulai.Size = New System.Drawing.Size(68, 27)
-        Me.TxtJamMulai.TabIndex = 22
-        '
-        'TxtJamSelesai
-        '
-        Me.TxtJamSelesai.Location = New System.Drawing.Point(205, 378)
-        Me.TxtJamSelesai.Name = "TxtJamSelesai"
-        Me.TxtJamSelesai.Size = New System.Drawing.Size(68, 27)
-        Me.TxtJamSelesai.TabIndex = 27
-        '
-        'TxtMenitSelesai
-        '
-        Me.TxtMenitSelesai.Location = New System.Drawing.Point(303, 378)
-        Me.TxtMenitSelesai.Name = "TxtMenitSelesai"
-        Me.TxtMenitSelesai.Size = New System.Drawing.Size(68, 27)
-        Me.TxtMenitSelesai.TabIndex = 26
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(377, 377)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(17, 28)
-        Me.Label9.TabIndex = 25
-        Me.Label9.Text = ":"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(280, 377)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(17, 28)
-        Me.Label10.TabIndex = 24
-        Me.Label10.Text = ":"
-        '
-        'TxtDetikSelesai
-        '
-        Me.TxtDetikSelesai.Location = New System.Drawing.Point(400, 378)
-        Me.TxtDetikSelesai.Name = "TxtDetikSelesai"
-        Me.TxtDetikSelesai.Size = New System.Drawing.Size(68, 27)
-        Me.TxtDetikSelesai.TabIndex = 23
-        '
         'ButtonTambah
         '
         Me.ButtonTambah.Location = New System.Drawing.Point(374, 435)
@@ -218,22 +128,32 @@ Partial Class TambahJadwalTayang
         Me.ButtonTambah.Text = "Tambah"
         Me.ButtonTambah.UseVisualStyleBackColor = True
         '
+        'ComboBoxMulai
+        '
+        Me.ComboBoxMulai.FormattingEnabled = True
+        Me.ComboBoxMulai.Items.AddRange(New Object() {"13:00", "16:00", "19:30"})
+        Me.ComboBoxMulai.Location = New System.Drawing.Point(205, 321)
+        Me.ComboBoxMulai.Name = "ComboBoxMulai"
+        Me.ComboBoxMulai.Size = New System.Drawing.Size(263, 28)
+        Me.ComboBoxMulai.TabIndex = 29
+        '
+        'ComboBoxSelesai
+        '
+        Me.ComboBoxSelesai.FormattingEnabled = True
+        Me.ComboBoxSelesai.Items.AddRange(New Object() {"15:50", "19:25", "22:15"})
+        Me.ComboBoxSelesai.Location = New System.Drawing.Point(205, 374)
+        Me.ComboBoxSelesai.Name = "ComboBoxSelesai"
+        Me.ComboBoxSelesai.Size = New System.Drawing.Size(263, 28)
+        Me.ComboBoxSelesai.TabIndex = 30
+        '
         'TambahJadwalTayang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(541, 541)
+        Me.Controls.Add(Me.ComboBoxSelesai)
+        Me.Controls.Add(Me.ComboBoxMulai)
         Me.Controls.Add(Me.ButtonTambah)
-        Me.Controls.Add(Me.TxtJamSelesai)
-        Me.Controls.Add(Me.TxtMenitSelesai)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TxtDetikSelesai)
-        Me.Controls.Add(Me.TxtJamMulai)
-        Me.Controls.Add(Me.TxtMenitMulai)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TxtDetikMulai)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -259,15 +179,7 @@ Partial Class TambahJadwalTayang
     Friend WithEvents Label5 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label6 As Label
-    Friend WithEvents TxtDetikMulai As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents TxtMenitMulai As TextBox
-    Friend WithEvents TxtJamMulai As TextBox
-    Friend WithEvents TxtJamSelesai As TextBox
-    Friend WithEvents TxtMenitSelesai As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TxtDetikSelesai As TextBox
     Friend WithEvents ButtonTambah As Button
+    Friend WithEvents ComboBoxMulai As ComboBox
+    Friend WithEvents ComboBoxSelesai As ComboBox
 End Class

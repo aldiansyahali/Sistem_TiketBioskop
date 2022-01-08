@@ -23,7 +23,7 @@ Partial Class JadwalTayang
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DGStudio = New System.Windows.Forms.DataGridView()
+        Me.DGJadwalTayang = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.StudioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -31,7 +31,7 @@ Partial Class JadwalTayang
         Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        CType(Me.DGStudio, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGJadwalTayang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,15 +45,15 @@ Partial Class JadwalTayang
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Jadwal Tayang"
         '
-        'DGStudio
+        'DGJadwalTayang
         '
-        Me.DGStudio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGStudio.Location = New System.Drawing.Point(51, 130)
-        Me.DGStudio.Name = "DGStudio"
-        Me.DGStudio.RowHeadersWidth = 51
-        Me.DGStudio.RowTemplate.Height = 29
-        Me.DGStudio.Size = New System.Drawing.Size(643, 204)
-        Me.DGStudio.TabIndex = 7
+        Me.DGJadwalTayang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGJadwalTayang.Location = New System.Drawing.Point(51, 130)
+        Me.DGJadwalTayang.Name = "DGJadwalTayang"
+        Me.DGJadwalTayang.RowHeadersWidth = 51
+        Me.DGJadwalTayang.RowTemplate.Height = 29
+        Me.DGJadwalTayang.Size = New System.Drawing.Size(643, 204)
+        Me.DGJadwalTayang.TabIndex = 7
         '
         'MenuStrip1
         '
@@ -118,13 +118,13 @@ Partial Class JadwalTayang
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ButtonTambah)
-        Me.Controls.Add(Me.DGStudio)
+        Me.Controls.Add(Me.DGJadwalTayang)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "JadwalTayang"
         Me.Text = "JadwalTayang"
-        CType(Me.DGStudio, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGJadwalTayang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -133,7 +133,7 @@ Partial Class JadwalTayang
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents DGStudio As DataGridView
+    Friend WithEvents DGJadwalTayang As DataGridView
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents StudioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem

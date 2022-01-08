@@ -49,7 +49,7 @@ Public Class CJadwalTayang
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlCommand.CommandText = "SELECT id, film
+            sqlCommand.CommandText = "SELECT id_film, nama_film
                                     FROM film"
 
             sqlRead = sqlCommand.ExecuteReader

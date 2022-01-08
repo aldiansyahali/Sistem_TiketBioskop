@@ -20,10 +20,9 @@
         ComboBoxFilm.Items.Clear()
         data_film = CJadwalTayang.GetFilmDatabase()
 
-
         ComboBoxFilm.DataSource = data_film
-        ComboBoxFilm.DisplayMember = "film"
-        ComboBoxFilm.ValueMember = "id"
+        ComboBoxFilm.DisplayMember = "nama_film"
+        ComboBoxFilm.ValueMember = "id_film"
         ComboBoxFilm.SelectedIndex = -1
 
     End Sub

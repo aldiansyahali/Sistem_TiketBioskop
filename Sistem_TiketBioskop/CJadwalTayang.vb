@@ -245,4 +245,31 @@ Public Class CJadwalTayang
 
         Return 0
     End Function
+
+    Public Function DeleteDataJadwalByIDDatabase(ID As Integer)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
+        + "password=" + password + ";" + "database=" + database
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "DELETE FROM jadwal_tayang " &
+                        "WHERE id_jadwal_tayang='" & ID & "'"
+
+            Debug.WriteLine(sqlQuery)
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
+
+        Return 0
+    End Function
 End Class

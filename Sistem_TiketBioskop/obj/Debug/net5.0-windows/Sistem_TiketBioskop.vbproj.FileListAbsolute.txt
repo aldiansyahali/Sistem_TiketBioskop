@@ -35,3 +35,4 @@ C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\ne
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.JadwalTayang.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.TambahJadwalTayang.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.EditJadwalTayang.resources
+C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.HapusJadwalTayang.resources

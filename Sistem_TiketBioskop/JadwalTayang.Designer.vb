@@ -31,6 +31,7 @@ Partial Class JadwalTayang
         Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DGJadwalTayang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,7 +62,7 @@ Partial Class JadwalTayang
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudioToolStripMenuItem, Me.FilmToolStripMenuItem, Me.JadwalTayangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(763, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(853, 28)
         Me.MenuStrip1.TabIndex = 8
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -85,7 +86,7 @@ Partial Class JadwalTayang
         '
         'ButtonTambah
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(599, 349)
+        Me.ButtonTambah.Location = New System.Drawing.Point(720, 130)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(94, 29)
         Me.ButtonTambah.TabIndex = 9
@@ -94,7 +95,7 @@ Partial Class JadwalTayang
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(499, 349)
+        Me.Button2.Location = New System.Drawing.Point(720, 174)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 29)
         Me.Button2.TabIndex = 10
@@ -103,18 +104,30 @@ Partial Class JadwalTayang
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(399, 349)
+        Me.Button3.Location = New System.Drawing.Point(720, 218)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 29)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Hapus"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Firebrick
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(720, 76)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "SignOut"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'JadwalTayang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(763, 431)
+        Me.ClientSize = New System.Drawing.Size(853, 366)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ButtonTambah)
@@ -141,4 +154,5 @@ Partial Class JadwalTayang
     Friend WithEvents ButtonTambah As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button1 As Button
 End Class

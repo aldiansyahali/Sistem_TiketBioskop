@@ -29,4 +29,6 @@
     Private Sub JadwalTayang_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         ReloadDataTableDatabase()
     End Sub
+
+
 End Class

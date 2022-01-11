@@ -29,7 +29,7 @@ Partial Class JadwalTayang
         Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JadwalTayangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ButtonTambah = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnEditJadwal = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DGJadwalTayang, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,14 +93,14 @@ Partial Class JadwalTayang
         Me.ButtonTambah.Text = "Tambah"
         Me.ButtonTambah.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnEditJadwal
         '
-        Me.Button2.Location = New System.Drawing.Point(720, 174)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnEditJadwal.Location = New System.Drawing.Point(720, 174)
+        Me.BtnEditJadwal.Name = "BtnEditJadwal"
+        Me.BtnEditJadwal.Size = New System.Drawing.Size(94, 29)
+        Me.BtnEditJadwal.TabIndex = 10
+        Me.BtnEditJadwal.Text = "Edit"
+        Me.BtnEditJadwal.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -129,7 +129,7 @@ Partial Class JadwalTayang
         Me.ClientSize = New System.Drawing.Size(853, 366)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.BtnEditJadwal)
         Me.Controls.Add(Me.ButtonTambah)
         Me.Controls.Add(Me.DGJadwalTayang)
         Me.Controls.Add(Me.Label1)
@@ -152,7 +152,7 @@ Partial Class JadwalTayang
     Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents JadwalTayangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ButtonTambah As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnEditJadwal As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
 End Class

@@ -225,9 +225,9 @@ Public Class CJadwalTayang
             sqlCommand.Connection = dbConn
             sqlQuery = "UPDATE jadwal_tayang SET " &
                         "id_film='" & id_film & "', " &
-                        "id_studio='" & id_studio & "' " &
-                        "tanggal='" & tanggal & "' " &
-                        "waktu_mulai='" & waktu_mulai & "' " &
+                        "id_studio='" & id_studio & "', " &
+                        "tanggal='" & tanggal & "', " &
+                        "waktu_mulai='" & waktu_mulai & "', " &
                         "waktu_selesai='" & waktu_selesai & "' " &
                         "WHERE id_jadwal_tayang='" & ID & "'"
 

@@ -1,31 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Putri Dzakiyah F\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj": {}
+    "C:\\Users\\aldia\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Putri Dzakiyah F\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj": {
+    "C:\\Users\\aldia\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Putri Dzakiyah F\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj",
+        "projectUniqueName": "C:\\Users\\aldia\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj",
         "projectName": "Sistem_TiketBioskop",
-        "projectPath": "C:\\Users\\Putri Dzakiyah F\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj",
-        "packagesPath": "C:\\Users\\Putri Dzakiyah F\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Putri Dzakiyah F\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\obj\\",
+        "projectPath": "C:\\Users\\aldia\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\Sistem_TiketBioskop.vbproj",
+        "packagesPath": "C:\\Users\\aldia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aldia\\source\\repos\\Sistem_TiketBioskop\\Sistem_TiketBioskop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Putri Dzakiyah F\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aldia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {},
+          "https://packagesource1": {}
         },
         "frameworks": {
           "net5.0-windows7.0": {

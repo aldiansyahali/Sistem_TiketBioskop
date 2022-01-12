@@ -83,4 +83,17 @@
         Dim formHapus = New Hapus_Film()
         formHapus.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        SignIn.Show()
+
+        Me.Close()
+    End Sub
+
+    Private Sub StudioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StudioToolStripMenuItem.Click
+        Dim studio = New Studio
+        studio.Show()
+
+        Me.Close()
+    End Sub
 End Class

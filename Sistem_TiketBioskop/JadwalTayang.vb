@@ -74,7 +74,6 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
 
-        Dim masuk = New SignIn
-        masuk.Show()
+        SignIn.Show()
     End Sub
 End Class

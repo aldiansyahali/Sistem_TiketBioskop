@@ -62,7 +62,7 @@ Partial Class JadwalTayang
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudioToolStripMenuItem, Me.FilmToolStripMenuItem, Me.JadwalTayangToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(853, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(892, 28)
         Me.MenuStrip1.TabIndex = 8
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -86,27 +86,27 @@ Partial Class JadwalTayang
         '
         'ButtonTambah
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(720, 130)
+        Me.ButtonTambah.Location = New System.Drawing.Point(720, 127)
         Me.ButtonTambah.Name = "ButtonTambah"
-        Me.ButtonTambah.Size = New System.Drawing.Size(94, 29)
+        Me.ButtonTambah.Size = New System.Drawing.Size(119, 41)
         Me.ButtonTambah.TabIndex = 9
         Me.ButtonTambah.Text = "Tambah"
         Me.ButtonTambah.UseVisualStyleBackColor = True
         '
         'BtnEditJadwal
         '
-        Me.BtnEditJadwal.Location = New System.Drawing.Point(720, 174)
+        Me.BtnEditJadwal.Location = New System.Drawing.Point(720, 183)
         Me.BtnEditJadwal.Name = "BtnEditJadwal"
-        Me.BtnEditJadwal.Size = New System.Drawing.Size(94, 29)
+        Me.BtnEditJadwal.Size = New System.Drawing.Size(119, 41)
         Me.BtnEditJadwal.TabIndex = 10
         Me.BtnEditJadwal.Text = "Edit"
         Me.BtnEditJadwal.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(720, 218)
+        Me.Button3.Location = New System.Drawing.Point(720, 239)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 29)
+        Me.Button3.Size = New System.Drawing.Size(119, 41)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Hapus"
         Me.Button3.UseVisualStyleBackColor = True
@@ -115,9 +115,9 @@ Partial Class JadwalTayang
         '
         Me.Button1.BackColor = System.Drawing.Color.Firebrick
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(720, 76)
+        Me.Button1.Location = New System.Drawing.Point(720, 61)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.Size = New System.Drawing.Size(119, 41)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "SignOut"
         Me.Button1.UseVisualStyleBackColor = False
@@ -126,7 +126,7 @@ Partial Class JadwalTayang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(853, 366)
+        Me.ClientSize = New System.Drawing.Size(892, 366)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.BtnEditJadwal)

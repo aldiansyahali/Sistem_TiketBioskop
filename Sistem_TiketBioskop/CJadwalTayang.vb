@@ -144,7 +144,6 @@ Public Class CJadwalTayang
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
 
-            'Perpustakaan.sqlDt.Load(sqlRead)
             sqlRead.Close()
             dbConn.Close()
         Catch ex As Exception

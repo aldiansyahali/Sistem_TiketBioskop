@@ -60,9 +60,7 @@
         End If
     End Sub
 
-    Private Sub Studio_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        SignIn.Show()
-    End Sub
+
 
     Private Sub BtnHapus_Click(sender As Object, e As EventArgs) Handles BtnHapus.Click
         Dim form_hapus = New HapusStudio()
@@ -75,4 +73,17 @@
         Me.Hide()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim masuk = New SignIn
+        masuk.Show()
+
+        Me.Close()
+    End Sub
+
+    Private Sub FilmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FilmToolStripMenuItem.Click
+        Dim film = New Film
+        film.Show()
+
+        Me.Close()
+    End Sub
 End Class

@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.exe
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.deps.json
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.runtimeconfig.json
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.runtimeconfig.dev.json
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\ref\Sistem_TiketBioskop.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.pdb
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.AssemblyReference.cache
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Edit_Film.resources
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Film.resources
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Form1.resources
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Hapus_Film.resources
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Tambah_Film.resources
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.GenerateResource.cache
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.AssemblyInfoInputs.cache
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.AssemblyInfo.vb
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.CoreCompileInputs.cache
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\ref\Sistem_TiketBioskop.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.pdb
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.genruntimeconfig.cache
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Google.Protobuf.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\K4os.Compression.LZ4.Streams.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\K4os.Hash.xxHash.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\MySql.Data.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\ZstdNet.dll
-C:\Users\Putri Dzakiyah F\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.vbproj.CopyComplete
-=======
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.exe
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.deps.json
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\bin\Debug\net5.0-windows\Sistem_TiketBioskop.runtimeconfig.json
@@ -69,7 +36,6 @@ C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\ne
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.TambahJadwalTayang.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.EditJadwalTayang.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.HapusJadwalTayang.resources
->>>>>>> alidotcomm
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Edit_Film.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Film.resources
 C:\Users\aldia\source\repos\Sistem_TiketBioskop\Sistem_TiketBioskop\obj\Debug\net5.0-windows\Sistem_TiketBioskop.Hapus_Film.resources

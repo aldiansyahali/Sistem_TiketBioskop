@@ -26,7 +26,7 @@ Public Class Koleksi_Film
     Private server As String = "localhost"
     Private username As String = "root"
     Private password As String = ""
-    Private database As String = "Sistem_TiketBioskop"
+    Private database As String = "tiket_bioskop"
 
     Public Property Judul_FilmProperty() As String
         Get

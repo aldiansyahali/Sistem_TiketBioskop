@@ -22,9 +22,6 @@
         selectedTableNomorJadwal = selectedRow.Cells(1).Value
     End Sub
 
-    Private Sub JadwalTayang_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        SignIn.Show()
-    End Sub
 
     Private Sub ButtonTambah_Click(sender As Object, e As EventArgs) Handles ButtonTambah.Click
         Dim Form_TambahJadwal_Tayang = New TambahJadwalTayang()
@@ -75,6 +72,9 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim masuk = New SignIn
+        masuk.Show()
+
         Me.Close()
     End Sub
 End Class

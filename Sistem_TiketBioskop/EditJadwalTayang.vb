@@ -11,7 +11,7 @@
         ' Add any initialization after the InitializeComponent() call.
 
         ComboBoxFilm.SelectedValue() = JadwalTayang.CJadwalTayang.id_filmProperty
-        ComboBoxStudio.SelectedItem() = JadwalTayang.CJadwalTayang.id_studioProperty
+        ComboBoxStudio.SelectedItem() = JadwalTayang.CJadwalTayang.id_studioProperty.ToString()
         DateTimePicker1.Value = JadwalTayang.CJadwalTayang.tanggalProperty
         ComboBoxMulai.SelectedItem() = JadwalTayang.CJadwalTayang.waktu_mulaiProperty
         ComboBoxSelesai.SelectedItem() = JadwalTayang.CJadwalTayang.waktu_selesaiProperty
@@ -41,6 +41,8 @@
         Next
     End Sub
 
+
+
     Private Sub ButtonTambah_Click(sender As Object, e As EventArgs) Handles ButtonTambah.Click
         JadwalTayang.CJadwalTayang.id_filmProperty = ComboBoxFilm.SelectedValue()
         JadwalTayang.CJadwalTayang.id_studioProperty = ComboBoxStudio.SelectedItem()
@@ -57,4 +59,5 @@
                                                                 )
         Me.Close()
     End Sub
+
 End Class

@@ -96,4 +96,11 @@
 
         Me.Close()
     End Sub
+
+    Private Sub JadwalTayangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JadwalTayangToolStripMenuItem.Click
+        Dim jadwal = New JadwalTayang
+        jadwal.Show()
+
+        Me.Close()
+    End Sub
 End Class

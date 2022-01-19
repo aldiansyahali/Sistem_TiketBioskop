@@ -19,6 +19,8 @@
             Users.emailProperty = data_user(1)
             Studio.Show()
             Me.Hide()
+        Else
+            MessageBox.Show("Kombinasi Email dan Password Salah")
         End If
     End Sub
 

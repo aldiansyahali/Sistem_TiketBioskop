@@ -76,13 +76,13 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         SignIn.Show()
 
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub FilmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FilmToolStripMenuItem.Click
         Dim film = New Film
         film.Show()
 
-        Me.Close()
+        Me.Hide()
     End Sub
 End Class

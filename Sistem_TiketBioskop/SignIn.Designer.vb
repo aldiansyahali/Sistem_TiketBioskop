@@ -53,6 +53,7 @@ Partial Class SignIn
         '
         Me.TxtPassword.Location = New System.Drawing.Point(175, 142)
         Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TxtPassword.Size = New System.Drawing.Size(262, 27)
         Me.TxtPassword.TabIndex = 2
         '

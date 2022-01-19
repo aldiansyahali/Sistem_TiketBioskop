@@ -18,4 +18,18 @@
                                                     Studio.CStudio.harga_kursiProperty)
         Me.Close()
     End Sub
+
+    Private Sub TxtKapasitas_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtKapasitas.KeyPress
+        If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = Chr(Keys.Delete) And Not e.KeyChar = Chr(Keys.Back) Then
+            e.Handled = True
+            MessageBox.Show("Please Insert Number Only")
+        End If
+    End Sub
+
+    Private Sub TxtHargaKursi_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtHargaKursi.KeyPress
+        If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = Chr(Keys.Delete) And Not e.KeyChar = Chr(Keys.Back) Then
+            e.Handled = True
+            MessageBox.Show("Please Insert Number Only")
+        End If
+    End Sub
 End Class
